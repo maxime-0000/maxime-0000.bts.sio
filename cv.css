@@ -1,0 +1,111 @@
+
+    :root{
+      --accent: #6b7280; 
+      --accent-2:#111827;
+      --muted:#9ca3af;
+      --paper:#fbfbfb;
+      --page-padding:32px;
+      --max-w:900px;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+ 
+    html,body{
+      margin:0;
+      padding:0;
+      background:linear-gradient(180deg,#f6f7f9 0%, #ffffff 100%);
+      color:var(--accent-2);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+ 
+    .container{
+      max-width:var(--max-w);
+      margin:32px auto;
+      background:var(--paper);
+      box-shadow:0 6px 24px rgba(15,23,42,0.06);
+      border-radius:12px;
+      padding:40px;
+      border:1px solid rgba(0,0,0,0.03);
+    }
+ 
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      border-bottom:1px solid rgba(0,0,0,0.06);
+      padding-bottom:18px;
+    }
+ 
+    .title{
+      font-size:36px;
+      letter-spacing:0.6px;
+      margin:0;
+      color:var(--accent-2);
+      font-weight:700;
+    }
+ 
+    .contact{
+      text-align:right;
+      font-size:14px;
+      color:var(--muted);
+    }
+ 
+    .contact a{ color:var(--muted); text-decoration:none; }
+ 
+    main{
+      display:grid;
+      grid-template-columns: 920px 1fr;
+      gap:32px;
+      margin-top:58px;
+    }
+ 
+    .sidebar{
+      border-right:1px dashed rgba(0,0,0,0.05);
+      padding-right:24px;
+    }
+ 
+    .section-title{
+      font-size:20px;
+      margin:0 0 14px 0;
+      color:var(--accent-2);
+      font-weight:700;
+    }
+ 
+    .muted{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.5;
+    }
+ 
+    .content{
+      padding-left:24px;
+    }
+ 
+    section{
+      margin-bottom:36px;
+    }
+ 
+    .experience-item, .formation-item{
+      margin-bottom:18px;
+    }
+ 
+    .year{
+      font-weight:700;
+      color:var(--accent);
+      display:block;
+      margin-bottom:6px;
+    }
+ 
+    ul.skills{
+      margin:0;
+      padding-left:18px;
+      color:var(--muted);
+    }
+ 
+    .lang-list{
+      font-size:14px;
+      color:var(--muted);
+    }
+
+   
